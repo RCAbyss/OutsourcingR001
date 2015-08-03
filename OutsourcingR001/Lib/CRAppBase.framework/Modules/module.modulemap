@@ -1,0 +1,6 @@
+framework module CRAppBase {
+  umbrella header "CRAppBase-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,49 @@
+//
+//  PrefixHeader.pch
+//  OutsourcingR001
+//
+//  Created by 任超 on 15/7/31.
+//  Copyright (c) 2015年 Roger Abyss. All rights reserved.
+//
+
+#ifndef OutsourcingR001_PrefixHeader_pch
+#define OutsourcingR001_PrefixHeader_pch
+
+#import "BaseViewController.h"
+#import <CRAppBase/CRAppBase-umbrella.h>
+
+#ifdef DEBUG
+    #define NSLog(format, ...)      do {                                                                                \
+                                    fprintf(stderr, "<%s : %d> %s\n",                                           \
+                                    [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String],  \
+                                    __LINE__, __func__);                                                        \
+                                    (NSLog)((format), ##__VA_ARGS__);                                           \
+                                    fprintf(stderr, "-----------\n\n");                                         \
+                                    } while (0)
+    /** 服务器地址管理 */
+        #define rBaseUrl                @""
+        #define rImageUrl               @""
+    #else
+        #define NSLog(format, ...)
+        #define NSAssert(...)
+
+        #define rBaseUrl                @""
+        #define rImageUrl               @""
+    #endif
+
+#endif
+
+#define rCOLOR_TOPIC                    rCOLOR_RGB(250,98,67)
+#define rCOLOR_LINE                     rCOLOR(220)
+#define rCOLOR_GRAY                     rCOLOR(100)
+#define rCOLOR_WHITE                    rCOLOR(255)
+#define rCOLOR_BLACK                    rCOLOR(0)
+
+#define rFONT(_v)                       [UIFont systemFontOfSize:_v]
+#define rFONT_S                         rFONT(12.f)
+#define rFONT_M                         rFONT(14.f)
+#define rFONT_G                         rFONT(16.f)
+
+#warning ADD
+
+#define rCOLOR_BACKGOUND                rCOLOR(244)

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CE7BD306D7D3886562C4AE15"
+               BlueprintIdentifier = "8E545EB4EC0913CB6D5C52B0"
                BuildableName = "libDDPageControl.a"
                BlueprintName = "DDPageControl"
                ReferencedContainer = "container:Pods.xcodeproj">
